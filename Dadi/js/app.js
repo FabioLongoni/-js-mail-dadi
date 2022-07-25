@@ -1,20 +1,17 @@
 console.log('Gioco dei dadi');
 
+console.log('computer')
 let numberCpu = Math.floor((Math.random() * 6) + 1);
+console.log(numberCpu);
+
+console.log('player')
 let numberPlayer = Math.floor((Math.random() * 6) + 1);
+console.log(numberPlayer);
 
 
-console.log('cumputer');
-let cpu = numberCpu;
-console.log(cpu);
-
-console.log('player');
-let player = numberPlayer;
-console.log(player);
-
-if (cpu > player) {
+if (numberCpu > numberPlayer) {
     console.log('computer won');
-}else if (cpu < player) {
+}else if (numberCpu < numberPlayer) {
     console.log('player won');
 }else {
     console.log('deuce');
